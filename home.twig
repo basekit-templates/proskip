@@ -19,7 +19,7 @@
             <div class="welcome-text">
                 {{widget('content', 'headercontent1', {"content":"<h3>Lorem Ipsum - Alam Thor</h3>"})|raw}}  
             </div>  
-            {{widget('extendednavigation', 'navigationheader', {})|raw}}
+            {{widget('extendednavigation', 'navigationheader', {"align":"right"})|raw}}
         </div>
     </nav>
 </header>
@@ -40,8 +40,8 @@
                 {{widget('profile', 'footercolumn1profilephone', { 'profileType':'phone', 'phone':'profile'})|raw}}
             </div>
             <div class="column columns-two-right">
-                 {{widget('content', 'footercolumn2content1', {"content":"<h3>Lorem Upsum</h3>"})|raw}}
-                {{widget('profile', 'footercolumn2profileaddress', { 'profileType':'address', 'address':'profile'})|raw}}
+                {{widget('content', 'footercolumn2content1', {"content":"<h3>Lorem Upsum</h3>"})|raw}}
+                {{widget('content', 'footercolumn2content2', {"content":"<p>Quas, inventore, explicabo, deserunt, similique alias ducimus ullam aliquam eaque delectus saepe vitae corporis minima cum atque.</p>"})|raw}}
             </div>
         </div>
     </div>
