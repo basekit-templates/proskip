@@ -167,6 +167,9 @@ footer.bk-footer {
   position: relative;
   float: right;
   width: 75%;
+  @media (max-width: 850px) {
+    width: 100%;
+  }
 }
 
 .widget.extendednavigation ul {
@@ -181,7 +184,6 @@ footer.bk-footer {
         } 
         li {
             display: inline-block;
-            float: left;
             @media @tablet {
                 padding: 0;
             }   
@@ -1504,8 +1506,8 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span {
       padding: 6px 26px;
     }
 
-    .widget.extendednavigation ul li:hover > ul li:first-child {
-
+    .widget.extendednavigation ul.align-right li.folder {
+      background-position: left center;
     }
 
     /* FORMS */
