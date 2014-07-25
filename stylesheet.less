@@ -33,6 +33,9 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
   overflow: visible;
 }
 
+body.edit .widget.content .bk-content-text {
+  min-height: inherit;
+}
 
 /* ===============================
    HEADER
@@ -631,10 +634,13 @@ hr.line.align-right {
   font-size: @font-swatch5-font-size;
   color: @color-swatch2;
   padding-bottom: 4px;
-  
   letter-spacing: 0.05em;
 }
 
+.twitter div.twitter-profile-pic a,
+  div.twitter-profile-pic {
+    line-height: 0;
+}
 
 /* ===============================
    CONTACT FORM WIDGET
