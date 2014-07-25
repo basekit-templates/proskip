@@ -57,6 +57,10 @@ header.bk-header .header-bg {
   display: inline-block;
 }
 
+.brand {
+  width: 70%;
+}
+
 .widget.companyname a {
     -webkit-transform: rotate(0deg) skew(-8deg, 0);
     -moz-transform: rotate(0deg) skew(-8deg, 0);
@@ -77,12 +81,17 @@ header.bk-header .header-bg {
 
 header.bk-header .header-profilephone {
     display: inline-block;
-    float: right;
+    margin-right: -4px;
+    width: 30%;
 }
 
 header.bk-header .widget.clicktocall {
   padding: 2px 0px;
   margin: 0;
+}
+
+.widget.clicktocall .ctc-wrap {
+  text-align: right;
 }
 
 .svg header.bk-header .header-profilephone .widget.clicktocall a {
@@ -1406,11 +1415,12 @@ select, input[type=search] {
 @media only screen and (max-width: 768px) {
 
   header.bk-header .header-bg {
-    padding: 40px 0;
+    padding: 40px 0 30px;
   }
 
   .brand {
     display: block;
+    width: 100%;
   }
 
   .widget.logo {
@@ -1435,6 +1445,12 @@ select, input[type=search] {
   header.bk-header .header-profilephone {
     padding: 7px 0px;
     display: block;
+    margin-right: 0;
+    width: 100%
+  }
+
+  .ctc-wrap.widget-align-right {
+    text-align: center;
     float: none;
   }
 
