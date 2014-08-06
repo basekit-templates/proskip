@@ -29,6 +29,100 @@
 </header>
 
 <div class="main wrapper clearfix">
+    <div id="page-zones__main-widgets__basketsummary" class="widget ecombasketsummary">
+    
+    <h2 class="basket-summary-title">Basket summary</h2>
+                <table class="basket-summary-items-table">
+            <tbody>
+                <tr>
+                    <th>Items </th>
+                    <th></th>
+                    <th>Amount</th>
+                </tr>
+                                    <tr class="basket-summary-items">
+                        <td>
+                                                                                            <div class="image-wrap" style="background-repeat: no-repeat;background-image:url('http://image.basekit.com/basekit-qa2068_pitts-s1s-in-flight.jpg')">
+                                    <img class="image" style="max-width: 150px" src="http://image.basekit.com/basekit-qa2068_pitts-s1s-in-flight.jpg">
+                                </div>
+                                                    </td>
+
+                        <td>
+                            <a class="basket-summary-productname" href="/store/product/pitts-special">Pitts Special</a>
+                            <span class="basket-summary-pricepu">£56,000.00</span>
+                            <span class="basket-summary-quantity">Quantity:</span>
+                            <div class="basket-summary-quantitybtn">
+                                <button class="js-remove" data-ref="734">-</button>
+                                <span>1</span>
+                                <button class="js-add" data-ref="734">+</button>
+                            </div>
+                        </td>
+                        <td class="basket-summary-amount">£56,000.00</td>
+                    </tr>
+                                    <tr class="basket-summary-items">
+                        <td>
+                                                                                            <div class="image-wrap" style="background-repeat: no-repeat;background-image:url('http://image.basekit.com/basekit-qa2068_20130629_xtremeair_xa-41_0138.jpg')">
+                                    <img class="image" style="max-width: 150px" src="http://image.basekit.com/basekit-qa2068_20130629_xtremeair_xa-41_0138.jpg">
+                                </div>
+                                                    </td>
+
+                        <td>
+                            <a class="basket-summary-productname" href="/store/product/xtremeair-sbach-300">XtremeAir Sbach 300</a>
+                            <span class="basket-summary-pricepu">£0.00</span>
+                            <span class="basket-summary-quantity">Quantity:</span>
+                            <div class="basket-summary-quantitybtn">
+                                <button class="js-remove" data-ref="735">-</button>
+                                <span>1</span>
+                                <button class="js-add" data-ref="735">+</button>
+                            </div>
+                        </td>
+                        <td class="basket-summary-amount">£0.00</td>
+                    </tr>
+                                    <tr class="basket-summary-items">
+                        <td>
+                                                                                            <div class="image-wrap" style="background-repeat: no-repeat;background-image:url('http://image.basekit.com/basekit-qa2068_eagle1.jpg')">
+                                    <img class="image" style="max-width: 150px" src="http://image.basekit.com/basekit-qa2068_eagle1.jpg">
+                                </div>
+                                                    </td>
+
+                        <td>
+                            <a class="basket-summary-productname" href="/store/product/cap-23x">Cap 23x</a>
+                            <span class="basket-summary-pricepu">£65,000.00</span>
+                            <span class="basket-summary-quantity">Quantity:</span>
+                            <div class="basket-summary-quantitybtn">
+                                <button class="js-remove" data-ref="727">-</button>
+                                <span>1</span>
+                                <button class="js-add" data-ref="727">+</button>
+                            </div>
+                        </td>
+                        <td class="basket-summary-amount">£65,000.00</td>
+                    </tr>
+                                                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="basket-summary-subtotal">Subtotal: £121,000.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form action="https://plugins.basekit-qa.co.uk/ecommerce/checkout" method="POST">
+            <input type="hidden" name="cartId" value="8c18a839cecd9fbc9f9033503a521492">
+            <input type="hidden" name="storeRef" value="101">
+            <input type="hidden" name="storeUrl" value="http://peerreviewivan.basekit-qa.co.uk">
+
+            <button class="btn basket-summary-submit" type="submit" disabled="">
+                Proceed to checkout
+            </button>
+        </form>
+    
+            <ul class="basket-summary-legal-links">
+            <li><a href="/terms-and-conditions">Terms and conditions</a></li>
+        </ul>
+    
+    </div>
+
+
+
+
     {{zone('main')|raw}}
 </div>  
 
