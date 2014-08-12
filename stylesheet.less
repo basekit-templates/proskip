@@ -149,7 +149,7 @@ header.bk-header nav .welcome-text {
     padding: 16px 0px;
     width: 30%;
     @media @tablet {
-      max-width: 85%;
+      width: 85%;
     }
 }
 
@@ -291,7 +291,6 @@ footer.bk-footer {
 .widget.extendednavigation ul li:hover > ul li {
   display: block;
   width: 100%;
-  text-align: left;
 }
 
 .widget.extendednavigation ul li:hover > ul li .text {
@@ -816,7 +815,7 @@ hr.line.align-right {
 
 .widget.socialicons a, .widget.profile .bk-profile-socialicons a {
     text-decoration: none;
-    text-indent: -9999px;
+    text-indent: 9999px;
     white-space: nowrap;
 }
 
@@ -1551,6 +1550,10 @@ select {
     width: 100%
   }
 
+  .widget.extendednavigation .bk-overlay {
+    top: -40px!important;
+  }
+
   .ctc-wrap.widget-align-right {
     text-align: center;
     float: none;
@@ -1635,7 +1638,7 @@ select {
     }
 
     .widget.extendednavigation ul li:hover > ul li a .text {
-      padding: 6px 26px;
+      padding: 6px 10px 6px 26px;
     }
 
     .widget.extendednavigation ul.align-right li.folder {
