@@ -434,8 +434,10 @@ footer.bk-footer {
     padding: 4px 0;
 }
 
-.widget.button button
-{
+.widget.button button,
+.ecombasket-remove-button,
+.widget.ecombasket .ecombasket-list-container ul li .ecombasket-item-info .ecombasket-remove-button,
+.ecombasket-summary-link {
   padding: 12px 20px;
   margin: 0;
   border: 0;
@@ -448,10 +450,19 @@ footer.bk-footer {
   text-decoration: none;
 }
 
-.widget.button button:hover 
-{
+.widget.button button:hover, 
+.ecombasket-remove-button:hover,
+.widget.ecombasket .ecombasket-list-container ul li .ecombasket-item-info .ecombasket-remove-button:hover,
+.ecombasket-summary-link:hover {
   background-color: @font-swatch7-background-color-hover;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.ecombasket-remove-button,
+.widget.ecombasket .ecombasket-list-container ul li .ecombasket-item-info .ecombasket-remove-button,
+.ecombasket-summary-link {
+	padding: 8px 16px;
 }
 
 /* ===============================
@@ -1293,6 +1304,10 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span {
 /* ===============================
    Ecommerce
    =============================== */
+
+.ecombasket-list-container {
+	padding-bottom: 20px;
+}
 
 .productlist-filter {
    margin: 0 auto;
