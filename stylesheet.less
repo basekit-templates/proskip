@@ -138,6 +138,7 @@ header.bk-header nav {
     background-color: @font-swatch6-background-color;
     display: table;
     width: 100%;
+    min-height: 50px;
 }
 
 header.bk-header nav .widget.socialicons {
@@ -150,6 +151,7 @@ header.bk-header nav .welcome-text {
     width: 30%;
     @media @tablet {
       width: 85%;
+      min-height: 50px;
     }
 }
 
@@ -228,13 +230,15 @@ footer.bk-footer {
         }
     }
     a.pull {
-        top: -37px;
+        top: -49px;
         @media @tablet {
             display: block;
         }
         &:after {
             background-color: @color-swatch1;
             box-shadow: 0 6px 0 @color-swatch1, 0 12px 0 @color-swatch1;
+            top: 11px;
+            right: 7px;
         }
     }
 }
