@@ -21,10 +21,10 @@ body {
 }
 
 .transition (@prop: all, @time: 0.5s, @ease: ease) {
-    -webkit-transition: @prop @time @ease;  
+    -webkit-transition: @prop @time @ease;
     -moz-transition:    @prop @time @ease;
-    -ms-transition:     @prop @time @ease; 
-    -o-transition:      @prop @time @ease;  
+    -ms-transition:     @prop @time @ease;
+    -o-transition:      @prop @time @ease;
     transition:         @prop @time @ease;
 }
 
@@ -97,6 +97,7 @@ header.bk-header .header-profilephone {
     display: inline-block;
     margin-right: -4px;
     width: 30%;
+    float: right;
 }
 
 header.bk-header .widget.clicktocall {
@@ -145,19 +146,19 @@ header.bk-header nav .widget.socialicons {
     float: left;
 }
 
-header.bk-header nav .welcome-text {
+header.bk-header nav .widget.content {
     display: inline-block;
     padding: 16px 0px;
-    width: 30%;
+    width: 29%;
     @media @tablet {
       width: 85%;
       min-height: 50px;
     }
 }
 
-header.bk-header nav .welcome-text h1, header.bk-header nav .welcome-text h2, 
-header.bk-header nav .welcome-text h3, header.bk-header nav .welcome-text h4,
-header.bk-header nav .welcome-text p {
+header.bk-header nav .widget.content h1, header.bk-header nav .widget.content h2,
+header.bk-header nav .widget.content h3, header.bk-header nav .widget.content h4,
+header.bk-header nav .widget.content p {
     font-size: @font-swatch6-font-size;
     color: @font-swatch6-color;
     font-weight: @font-swatch6-font-weight;
@@ -211,12 +212,12 @@ footer.bk-footer {
         margin: 0;
         @media @tablet {
             border-top: 1px solid darken(@font-swatch6-background-color,5%);
-        } 
+        }
         li {
             display: inline-block;
             @media @tablet {
                 padding: 0;
-            }   
+            }
             &.folder {
                 &:after {
                     display: none;
@@ -430,7 +431,7 @@ footer.bk-footer {
 .widget.feature h2 span, .widget.feature h3 span {
     display: inline-block;
     padding: 15px;
-    background-color: hsla(hue(@color-swatch4), saturation(@color-swatch4), lightness(lighten(@color-swatch4,10%)), 0.6); 
+    background-color: hsla(hue(@color-swatch4), saturation(@color-swatch4), lightness(lighten(@color-swatch4,10%)), 0.6);
 }
 
 
@@ -458,7 +459,7 @@ footer.bk-footer {
   text-decoration: none;
 }
 
-.widget.button button:hover, 
+.widget.button button:hover,
 .ecombasket-remove-button:hover,
 .widget.ecombasket .ecombasket-list-container ul li .ecombasket-item-info .ecombasket-remove-button:hover,
 .ecombasket-summary-link:hover {
@@ -600,7 +601,7 @@ hr.line.align-right {
   font-weight: @font-swatch5-font-weight;
   color: @color-swatch5;
   font-size: 12px;
-  
+
   text-decoration: none;
 }
 
@@ -693,7 +694,7 @@ hr.line.align-right {
     line-height:@font-swatch5-line-height;
     color:@color-swatch1;
     letter-spacing: 1px;
-    
+
     margin-bottom: 6px;
 }
 
@@ -763,11 +764,11 @@ hr.line.align-right {
     -moz-border-radius: 30px;
     border-radius: 30px;
     border: 2px solid @color-swatch2;
-    
+
     background-color: transparent;
     letter-spacing: 1px;
 }
-  
+
 .widget.contactform fieldset button.btn:hover {
   background-color: darken(@color-swatch7,5%);
   cursor: pointer;
@@ -789,7 +790,7 @@ hr.line.align-right {
    =============================== */
 
 .widget.tweet {
-   padding: 20px 0; 
+   padding: 20px 0;
 }
 
 .svg .widget.tweet a {
@@ -812,7 +813,7 @@ hr.line.align-right {
     background-image: image('/images/social/socialicons-twitter.png');
 }
 
-.widget.tweet a:hover 
+.widget.tweet a:hover
 {
     background-color: @font-swatch7-background-color-hover;
     cursor: pointer;
@@ -858,7 +859,7 @@ hr.line.align-right {
     background-position: center;
 }
 
-.widget.socialicons span a:hover, .widget.profile 
+.widget.socialicons span a:hover, .widget.profile
 .bk-profile-socialicons span a:hover {
     background-color: darken(@color-swatch2,2%);
 }
@@ -1325,7 +1326,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span {
         label {
             display: block;
             padding-bottom: .4em;
-        }  
+        }
         select {
             width: auto;
             @media @tablet {
@@ -1345,7 +1346,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span {
 
 .widget.ecomproductslist .productlist-filter .productlist-display-form .form-group {
     padding: 10px 5px 10px 0;
-    margin: 0 5px 0 0; 
+    margin: 0 5px 0 0;
 }
 
 .productlist-display-form .form-group {
@@ -1419,7 +1420,7 @@ select {
     width: 100%;
     padding: 0;
 
-  } 
+  }
   .form-group.productlist-search button {
     margin-left: -4px;
     width: 25%;
@@ -1452,7 +1453,7 @@ select {
         max-width: 100%!important;
       }
     }
-    @media (max-width: 360px) { 
+    @media (max-width: 360px) {
       max-width: 100%;
     }
   }
@@ -1515,7 +1516,7 @@ select {
         outline: none;
       }
     }
-  } 
+  }
   // Table
   table {
     margin: 20px 0 30px;
@@ -1614,7 +1615,7 @@ select {
       }
     }
   }
-  // 
+  //
   .js-shipping-opts {
     border-bottom: 1px solid darken(@color-swatch1,10%);
     padding-bottom: 20px;
@@ -1712,7 +1713,7 @@ select {
     .widget .extendednavigation ul {
         width: 100%;
         display: none;
-        padding: 0px; 
+        padding: 0px;
     }
 
     .widget .extendednavigation li {
@@ -1821,7 +1822,7 @@ select {
   footer.bk-footer {
     padding: 3em 0em;
   }
-  .welcome-text h3 {
+  nav .widget.content h3 {
   	width: 250px;
   	white-space: nowrap;
   	overflow: hidden;
