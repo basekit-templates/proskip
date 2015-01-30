@@ -73,6 +73,7 @@ header.bk-header .header-bg {
 
 .brand {
   width: 70%;
+  float: left;
 }
 
 .widget.companyname a {
@@ -95,18 +96,22 @@ header.bk-header .header-bg {
 
 header.bk-header .header-profilephone {
     display: inline-block;
-    margin-right: -4px;
     width: 30%;
     float: right;
+
+        @media @tablet {
+            width:100%;
+            margin: 20px 0;
+            float: none;
+        }
 }
+
+
+/* CLICK TO CALL WIDGET */
 
 header.bk-header .widget.clicktocall {
   padding: 2px 0px;
   margin: 0;
-}
-
-header.bk-header .widget.clicktocall .ctc-wrap {
-  text-align: right;
 }
 
 .svg header.bk-header .header-profilephone .widget.clicktocall a {
@@ -1665,29 +1670,8 @@ select {
     font-size:bkscale(@font-swatch10-font-size, 0.8)
   }
 
-  header.bk-header .header-profilephone {
-    padding: 7px 0px;
-    display: block;
-    margin-right: 0;
-    width: 100%
-  }
-
   .widget.extendednavigation .bk-overlay {
     top: -40px!important;
-  }
-
-  .ctc-wrap.widget-align-right {
-    text-align: center;
-    float: none;
-  }
-
-  .svg header.bk-header .header-profilephone .widget.clicktocall a {
-      background-position: 25px center;
-      display: block;
-      padding: 7px 14px 7px 15px;
-      text-align: center;
-      margin: 20px auto 0;
-      max-width: 65%;
   }
 
   header.bk-header .header-profilephone span {
@@ -1811,13 +1795,6 @@ select {
     line-height: bkscale(@font-swatch10-font-size, 0.85);
   }
 
-  header.bk-header .header-profilephone {
-    display: block;
-    .widget.clicktocall a {
-      width: 100%;
-    }
-  }
-
   .widget.feature .feature-bgimg .content {
     height: auto;
   }
@@ -1830,48 +1807,6 @@ select {
   	white-space: nowrap;
   	overflow: hidden;
   	text-overflow: ellipsis;
-  }
-
-  /* CLICK TO CALL */
-
-  .widget.clicktocall a {
-    background-image: image('/images/ic-call.svg');
-    background-size: 7px;
-    background-color: @font-swatch7-background-color;
-    background-position: 15px center;
-    background-repeat:no-repeat;
-    padding: 12px 12px 12px 36px;
-    margin: 0;
-    border: 0;
-
-    font-family: @font-swatch7-font-family;
-    font-size: @font-swatch7-color;
-    font-weight:@font-swatch7-font-weight;
-    color: @font-swatch7-color;
-    text-decoration: none;
-    text-shadow: 0 1px 0px rgba(0,0,0,0.2);
-  }
-
-  .widget.clicktocall a:hover {
-   background-image: image('/images/ic-call.svg');
-    background-size: 7px;
-    background-color: @font-swatch7-background-color;
-    background-position: 15px center;
-    background-repeat:no-repeat;
-    padding: 12px 12px 12px 36px;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  .form-group.productlist-search {
-    position: relative;
-    input[type=search] {
-      width: 100%;
-    }
-    button.btn {
-      left: 0;
-      margin-top: 20px;
-      width: 100%;
-    }
   }
 }
 

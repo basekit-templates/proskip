@@ -11,7 +11,7 @@
             </div>
             <div class="header-profilephone">
                 {% if profile.phone|length > 0 %}
-                   {{widget('clicktocall', 'headerclicktocall', {})|raw}}
+                   {{widget('clicktocall', 'headerclicktocall', {"align":"widget-align-center"})|raw}}
                 {% endif %}
             </div>
         </div>
