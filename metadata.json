@@ -9,6 +9,10 @@
         "es": ["Colorido", "Claro", "Profesional", "Corporativo", "Comercio", "empresa", "negocios", "corporativo", "finanzas", "financiero", "firma", "dinero", "abierto", "simple"],
         "br": ["Colorido", "Claro", "Profissional", "Corporativo", "Comércio", "empresa", "negócios", "corporativo", "finanças", "financeiro", "firma", "dinheiro", "aberto", "simples"]
     },
+    "images":[
+        "images/feature-bg.jpg",
+        "images/logo.png"
+    ],
     "colorSwatches":
     {
         "Swatch 1": {
