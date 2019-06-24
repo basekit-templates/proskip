@@ -1,0 +1,41 @@
+.empty-zone,
+#page-zones__main:empty,
+.canvas,
+#page-zones__main > .widget:not(.row),
+.row:not(.widget):not(.row--width-no-padding) .row__container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    @media @tablet {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+.edit #page-zones__main-overlay + .widget:not(.row),
+#page-zones__main > .widget:not(.row):first-child {
+    margin-top: 20px;
+}
+
+#page-zones__main > .widget:not(.row):last-child {
+    margin-bottom: 40px;
+    
+    @media @tablet {
+        margin-bottom: 20px;
+    }
+}
+
+// Adds spacing to a section when a widget follows it
+#page-zones__main > .row + .widget:not(.row) {
+    margin-top: 15px;
+}
+
+
+// Adds spacing to a widget when a section follows it
+#page-zones__main > .widget:not(.row) + .row:last-child {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
