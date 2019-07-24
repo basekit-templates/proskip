@@ -7,11 +7,27 @@
     margin-right: auto;
     max-width: 960px;
     width: 90%;
-    @media @tablet {
-        max-width: 100%;
-        width: 100%;
-    }
 }
+
+
+.bk-pt-default .edit #page-zones__main-overlay + .widget:not(.row),
+.bk-pt-default #page-zones__main > .widget:not(.row):first-child {
+  margin-top: 40px;
+
+  @media @mobile {
+    margin-top: 20px;
+  }
+}
+
+
+.bk-pt-default #page-zones__main > .widget:not(.row):last-child {
+  margin-bottom: 40px;
+
+  @media @mobile {
+    margin-bottom: 20px;
+  }
+}
+
 
 // Adds spacing to a section when a widget follows it
 #page-zones__main > .row + .widget:not(.row) {
