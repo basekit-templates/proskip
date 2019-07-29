@@ -1,8 +1,34 @@
+
+// -----------------------------
+//  Migration
+// -----------------------------
+
+
+#migrated-site {
+
+
+// Stylesheet overrides
+// -----------------------------
+
+
+.main.wrapper {
+    width: 100%;
+    margin: 0;
+}
+
+
+
+
+// Migration styles
+// -----------------------------
+
+
 .empty-zone,
 #page-zones__main:empty,
 .canvas,
 #page-zones__main > .widget:not(.row),
-.row:not(.widget):not(.row--width-no-padding) .row__container {
+.row:not(.widget):not(.row--width-no-padding) .row__container,
+.feature {
     margin-left: auto;
     margin-right: auto;
     max-width: 960px;
@@ -39,4 +65,7 @@
 #page-zones__main > .widget:not(.row) + .row:last-child {
     margin-bottom: 15px;
     margin-top: 15px;
+}
+
+
 }
