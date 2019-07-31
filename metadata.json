@@ -3,6 +3,7 @@
 	"thumbnail":"proskip.png",
 	"screenshot":"proskip-screenshot.jpg",
 	"templateType":"standard",
+    "versionTenCompatible": 1,
     "pageTypes": ["home"],
     "tags": {
         "en": ["Colorful", "Bright", "Professional", "Business", "Trade", "colorful", "colourful", "company", "business", "corporate", "finance", "financial", "firm", "money", "open", "simple"],
